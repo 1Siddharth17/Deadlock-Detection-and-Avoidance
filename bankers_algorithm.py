@@ -1,5 +1,4 @@
 """BANKER'S ALGORITHM SIMULATOR
-MODULES:
     - calculate_need()     : Computes the Need matrix from Max - Allocation
     - is_safe()            : Runs the Safety Algorithm to find a safe sequence
     - request_resources()  : Handles a process resource request with rollback
@@ -12,10 +11,6 @@ import tkinter as tk
 from tkinter import ttk, messagebox, scrolledtext
 import copy
 
-
-# ─────────────────────────────────────────────────────────────────────────────
-#  CORE ALGORITHM FUNCTIONS
-# ─────────────────────────────────────────────────────────────────────────────
 
 def calculate_need(max_matrix, allocation_matrix, n_processes, n_resources):
 
@@ -83,7 +78,7 @@ def is_safe(allocation_matrix, need_matrix, available, n_processes, n_resources)
 def request_resources(process_id, request, allocation_matrix, need_matrix,
                       available, n_processes, n_resources):
     """
-    Resource Request Algorithm (Banker's).
+    Resource Request Algorithm.
     """
     steps = []
     pid = process_id
